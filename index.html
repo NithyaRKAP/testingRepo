@@ -4,6 +4,10 @@ div{
   width: 100px;
   height: 100px;
 }
+.widthBox{
+  width: 700px;
+  transition: 2s;
+}
 </style>
 <div id="box"></div>
 <button onclick="check()">click</button>
@@ -12,5 +16,6 @@ div{
   function check()
   {
     box1.style.backgroundColor="red";
+    box1.setAttribute("class","widthBox");
   }
 </script>
