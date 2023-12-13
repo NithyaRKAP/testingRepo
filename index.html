@@ -1,12 +1,13 @@
-<input id="enter" onkeyup="check()">
-
-<h1 id="result"></h1>
+<button onclick="update()">Add</button>
+<div id="result"></div>
 
 <script>
-  var enter1=document.getElementById("enter");
   var result1=document.getElementById("result");
-
-  function check(){
-    result1.textContent=enter1.value;
+  
+  function update(){
+    //create new element
+    var newElement=document.createElement("h1");
+    newElement.textContent="Hello";
+    result1.append(newElement);
   }
 </script>
