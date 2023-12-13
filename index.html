@@ -1,21 +1,12 @@
-<style>
-div{
-  background-color: yellow;
-  width: 100px;
-  height: 100px;
-}
-.widthBox{
-  width: 700px;
-  transition: 2s;
-}
-</style>
-<div id="box"></div>
-<button onclick="check()">click</button>
+<input id="enter" onkeyup="check()">
+
+<h1 id="result"></h1>
+
 <script>
-  var box1=document.getElementById("box");
-  function check()
-  {
-    box1.style.backgroundColor="red";
-    box1.setAttribute("class","widthBox");
+  var enter1=document.getElementById("enter");
+  var result1=document.getElementById("result");
+
+  function check(){
+    result1.textContent=enter1.value;
   }
 </script>
