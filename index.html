@@ -1,13 +1,9 @@
-<button onclick="update()">Add</button>
-<div id="result"></div>
+<!-- How can i create an HTML button that, when clicked, triggers a JavaScript function, and changes the button's color to red with each successive click? -->
+
+<button onclick="changeColor()" id="color1">change color</button>
 
 <script>
-  var result1=document.getElementById("result");
-  
-  function update(){
-    //create new element
-    var newElement=document.createElement("h1");
-    newElement.textContent="Hello";
-    result1.append(newElement);
+  function changeColor(){
+     var color2=document.getElementById("color1").style.backgroundColor="red";
   }
 </script>
