@@ -1,14 +1,14 @@
-<!-- How can i create an HTML button that, when clicked, triggers a JavaScript function, and changes the button's color to red with each successive click? -->
-
-<h1 id="changeName">Name</h1>
-<button id="button1" onclick="change1(event)">Kanika</button>
-<button id="button2" onclick="change1(event)">Anika</button>
+<!-- How to delete one data in a heading while clicking it without deleteing other data -->
+<h1  onclick="deleteitem(event)">One</h1>
+<h1 onclick="deleteitem(event)">Two</h1>
+<h1 onclick="deleteitem(event)">Three</h1>
+<h1 onclick="deleteitem(event)">Four</h1>
+<h1 onclick="deleteitem(event)">five</h1>
+<h1 onclick="deleteitem(event)">Six</h1>
 
 <script>
-  var changeName1=document.getElementById("changeName");
-
-  function change1(event){
-    changeName1.textContent=event.target.textContent;
-  }
   
+  function deleteitem(event){
+    event.target.remove();
+  }
 </script>
